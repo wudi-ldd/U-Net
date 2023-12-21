@@ -19,6 +19,8 @@ This guide provides detailed steps for training semantic segmentation models usi
    - `num_classes`: Set to the number of your dataset categories + 1.
    - `backbone`: Choose `resnet50` or `vgg16` as the backbone network.
    - `pretrained`: Set to `True` to use pre-trained weights for accelerated training.
+     'vgg'       : 'https://download.pytorch.org/models/vgg16-397923af.pth',
+     'resnet50'  : 'https://s3.amazonaws.com/pytorch/models/resnet50-19c8e357.pth'
    - `model_path`: If using pre-trained weights, set to `""`; if you prefer self-training on existing weights, specify the weight path.
    - `input_shape`: Adjust the training image size, it's recommended to resize beforehand to speed up training.
 2. **Starting Training**: After modifying the parameters, run `train.py` to start training.
