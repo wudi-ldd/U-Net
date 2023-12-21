@@ -29,6 +29,7 @@ This guide provides detailed steps for training semantic segmentation models usi
 ## Making Predictions
 1. **Setting Prediction Parameters**: Modify the parameters in `predict.py`.
    - `mode`: Choose between `predict` and `dir_predict`.
+   - dir_predict: Conducts batch predictions for all images in the 'img' folder, generating complete segmentation masks and a ##ranking of uncertainty## for each image. The results are saved in the 'img_out' folder.
    - `name_classes`: Modify according to your categories.
 2. **Configuring UNet Parameters**: Modify the parameters in the `unet.py` file.
 3. **Start Prediction**: Run `predict.py` for predictions.
